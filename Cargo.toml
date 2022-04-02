@@ -16,5 +16,9 @@ web = []
 
 [dependencies]
 egui = { version = "0.17", features = [ "convert_bytemuck" ] }
-wgpu = "0.12"
+#wgpu = "0.12"
+wgpu = {git="https://github.com/gfx-rs/wgpu.git", rev="3bdef1c"}
 bytemuck = "1.7"
+
+[dev-dependencies]
+naga = { git="https://github.com/gfx-rs/naga.git", rev="43cd0ec", features=["wgsl-in"] }
